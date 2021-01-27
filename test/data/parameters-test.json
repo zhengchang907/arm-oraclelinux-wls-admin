@@ -6,34 +6,34 @@
       "value": "weblogic"
     },
     "adminPasswordOrKey": {
-      "value": "#adminPasswordOrKey#"
+      "value": "Secret123456"
     },
     "dnsLabelPrefix": {
       "value": "wls"
     },
     "wlsDomainName": {
-      "value": "#wlsdomainname#"
+      "value": "weblogic"
     },
     "wlsUserName": {
-      "value": "#wlsusername#"
+      "value": "weblogic"
     },
     "wlsPassword": {
-      "value": "#wlspassword#"
+      "value": "Secret123456"
     },
     "adminVMName": {
-      "value": "#adminvmname#"
+      "value": "weblogic"
     },
     "vmSizeSelect": {
-      "value": "Standard_A3"
+      "value": "Standard_B1ms"
     },
     "location": {
-      "value": "#location#"
+      "value": "eastus"
     },
     "skuUrnVersion": {
-      "value": "#skuUrnVersion#"
+      "value": "owls-141100-jdk11-ol76;Oracle:weblogic-141100-jdk11-ol76:owls-141100-jdk11-ol7;latest"
     },
     "_artifactsLocation": {
-      "value": "https://raw.githubusercontent.com/#gitUserName#/arm-oraclelinux-wls-admin/#testbranchName#/src/main/arm/"
+      "value": "https://raw.githubusercontent.com/zhengchang907/arm-oraclelinux-wls-admin/keyvault-automation/src/main/arm/"
     }
   }
 }
