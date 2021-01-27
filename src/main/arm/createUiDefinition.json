@@ -1279,7 +1279,7 @@
             "keyVaultCustomIdentityKeyStoretDataSecretName": "[steps('section_sslConfiguration').keyVaultStoredCustomSSLSettings.keyVaultCustomIdentityKeyStoretDataSecretName]",
             "keyVaultCustomIdentityKeyStorePassPhraseSecretName": "[steps('section_sslConfiguration').keyVaultStoredCustomSSLSettings.keyVaultCustomIdentityKeyStorePassPhraseSecretName]",
             "keyVaultCustomIdentityKeyStoreType": "[steps('section_sslConfiguration').keyVaultStoredCustomSSLSettings.keyVaultCustomIdentityKeyStoreType]",
-            "keyVaultCustomTrustKeyStoretDataSecretName": "[steps('section_sslConfiguration').keyVaultStoredCustomSSLSettings.keyVaultCustomTrustKeyStoretDataSecretName]",
+            "keyVaultCustomTrustKeyStoreDataSecretName": "[steps('section_sslConfiguration').keyVaultStoredCustomSSLSettings.keyVaultCustomTrustKeyStoreDataSecretName]",
             "keyVaultCustomTrustKeyStorePassPhraseSecretName": "[steps('section_sslConfiguration').keyVaultStoredCustomSSLSettings.keyVaultCustomTrustKeyStorePassPhraseSecretName]",
             "keyVaultCustomTrustKeyStoreType": "[steps('section_sslConfiguration').keyVaultStoredCustomSSLSettings.keyVaultCustomTrustKeyStoreType]",
             "keyVaultPrivateKeyAliasSecretName": "[steps('section_sslConfiguration').keyVaultStoredCustomSSLSettings.keyVaultPrivateKeyAliasSecretName]",
