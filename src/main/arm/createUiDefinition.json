@@ -379,7 +379,7 @@
                                 }
                             },
                             {
-                                "name": "uploadedCustomTrustKeyStoretData",
+                                "name": "uploadedCustomTrustKeyStoreData",
                                 "type": "Microsoft.Common.FileUpload",
                                 "label": "Custom Trust KeyStore Data file(.jks,.p12)",
                                 "toolTip": "Custom Trust KeyStore for SSL configuration.",
@@ -1273,18 +1273,7 @@
             "wlsUserName": "[basics('basicsRequired').wlsUserName]",
             "enableHTTPAdminListenPort": "[basics('basicsOptional').enableAdminHTTPListenPort]",
             "enableCustomSSL": "[steps('section_sslConfiguration').enableCustomSSL]",
-<<<<<<< HEAD
-            "adminSSLKeyVaultResourceGroup": "[steps('section_sslConfiguration').customSSLSettings.keyVaultResourceGroup]",
-            "adminSSLKeyVaultName": "[steps('section_sslConfiguration').customSSLSettings.keyVaultName]",
-            "keyVaultCustomIdentityKeyStoreDataSecretName": "[steps('section_sslConfiguration').customSSLSettings.keyVaultCustomIdentityKeyStoreDataSecretName]",
-            "keyVaultCustomIdentityKeyStorePassPhraseSecretName": "[steps('section_sslConfiguration').customSSLSettings.keyVaultCustomIdentityKeyStorePassPhraseSecretName]",
-            "keyVaultCustomIdentityKeyStoreType": "[steps('section_sslConfiguration').customSSLSettings.keyVaultCustomIdentityKeyStoreType]",
-            "keyVaultCustomTrustKeyStoreDataSecretName": "[steps('section_sslConfiguration').customSSLSettings.keyVaultCustomTrustKeyStoreDataSecretName]",
-            "keyVaultCustomTrustKeyStorePassPhraseSecretName": "[steps('section_sslConfiguration').customSSLSettings.keyVaultCustomTrustKeyStorePassPhraseSecretName]",
-            "keyVaultCustomTrustKeyStoreType": "[steps('section_sslConfiguration').customSSLSettings.keyVaultCustomTrustKeyStoreType]",
-            "keyVaultPrivateKeyAliasSecretName": "[steps('section_sslConfiguration').customSSLSettings.keyVaultPrivateKeyAliasSecretName]",
-            "keyVaultPrivateKeyPassPhraseSecretName": "[steps('section_sslConfiguration').customSSLSettings.keyVaultPrivateKeyPassPhraseSecretName]"
-=======
+            "sslConfigurationAccessOption": "[steps('section_sslConfiguration').sslConfigurationAccessOption]",
             "adminSSLKeyVaultResourceGroup": "[steps('section_sslConfiguration').keyVaultStoredCustomSSLSettings.keyVaultResourceGroup]",
             "adminSSLKeyVaultName": "[steps('section_sslConfiguration').keyVaultStoredCustomSSLSettings.keyVaultName]",
             "keyVaultCustomIdentityKeyStoretDataSecretName": "[steps('section_sslConfiguration').keyVaultStoredCustomSSLSettings.keyVaultCustomIdentityKeyStoretDataSecretName]",
@@ -1298,12 +1287,11 @@
             "uploadedCustomIdentityKeyStoreData": "[steps('section_sslConfiguration').uploadedCustomSSLSettings.uploadedCustomIdentityKeyStoreData]",
             "uploadedCustomIdentityKeyStorePassphrase": "[steps('section_sslConfiguration').uploadedCustomSSLSettings.uploadedCustomIdentityKeyStorePassphrase]",
             "uploadedCustomIdentityKeyStoreType": "[steps('section_sslConfiguration').uploadedCustomSSLSettings.uploadedCustomIdentityKeyStoreType]",
-            "uploadedCustomTrustKeyStoretData": "[steps('section_sslConfiguration').uploadedCustomSSLSettings.uploadedCustomTrustKeyStoretData]",
+            "uploadedCustomTrustKeyStoreData": "[steps('section_sslConfiguration').uploadedCustomSSLSettings.uploadedCustomTrustKeyStoreData]",
             "uploadedCustomTrustKeyStorePassPhrase": "[steps('section_sslConfiguration').uploadedCustomSSLSettings.uploadedCustomTrustKeyStorePassPhrase]",
             "uploadedCustomTrustKeyStoreType": "[steps('section_sslConfiguration').uploadedCustomSSLSettings.uploadedCustomTrustKeyStoreType]",
             "uploadedPrivateKeyAlias": "[steps('section_sslConfiguration').uploadedCustomSSLSettings.uploadedPrivateKeyAlias]",
             "uploadedPrivateKeyPassPhrase": "[steps('section_sslConfiguration').uploadedCustomSSLSettings.uploadedPrivateKeyPassPhrase]"
->>>>>>> 7487175... update UI for key vault automation
         }
     }
 }
