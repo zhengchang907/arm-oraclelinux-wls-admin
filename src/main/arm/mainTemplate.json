@@ -684,17 +684,17 @@
                "keyVaultCustomIdentityKeyStoreDataSecretName": {
                   "reference": {
                      "keyVault": {
-                        "id": "[resourceId(variables('const_currentSubscription'), sslConfig.sllConfigResourceSelector(parameters('adminSSLKeyVaultResourceGroup'), resourceGroup().name, parameters('sslConfigurationAccessOption')), 'Microsoft.KeyVault/vaults', sslConfig.sllConfigResourceSelector(parameters('adminSSLKeyVaultName'), reference(variables('name_keyVaultNestedTemplate'), '2020-06-01').outputs.keyVaultName.value, parameters('sslConfigurationAccessOption')))]"
+                        "id": "[resourceId(variables('const_currentSubscription'), sslConfig.sllConfigResourceSelector(parameters('adminSSLKeyVaultResourceGroup'), resourceGroup().name, parameters('sslConfigurationAccessOption')), 'Microsoft.KeyVault/vaults', sslConfig.sllConfigResourceSelector(parameters('adminSSLKeyVaultName'), reference('keyVaultNestedTemplate', '2020-06-01').outputs.keyVaultName.value, parameters('sslConfigurationAccessOption')))]"
                      },
-                     "secretName": "[sslConfig.sllConfigResourceSelector(parameters('keyVaultCustomIdentityKeyStoreDataSecretName'), reference(variables('name_keyVaultNestedTemplate'), '2020-06-01').outputs.customIdentityKeyStoreDataSecretName.value, parameters('sslConfigurationAccessOption'))]"
+                     "secretName": "[sslConfig.sllConfigResourceSelector(parameters('keyVaultCustomIdentityKeyStoreDataSecretName'), reference('keyVaultNestedTemplate', '2020-06-01').outputs.customIdentityKeyStoreDataSecretName.value, parameters('sslConfigurationAccessOption'))]"
                   }
                },
                "keyVaultCustomIdentityKeyStorePassPhraseSecretName": {
                   "reference": {
                      "keyVault": {
-                        "id": "[resourceId(variables('const_currentSubscription'), sslConfig.sllConfigResourceSelector(parameters('adminSSLKeyVaultResourceGroup'), resourceGroup().name, parameters('sslConfigurationAccessOption')), 'Microsoft.KeyVault/vaults', sslConfig.sllConfigResourceSelector(parameters('adminSSLKeyVaultName'), reference(variables('name_keyVaultNestedTemplate'), '2020-06-01').outputs.keyVaultName.value, parameters('sslConfigurationAccessOption')))]"
+                        "id": "[resourceId(variables('const_currentSubscription'), sslConfig.sllConfigResourceSelector(parameters('adminSSLKeyVaultResourceGroup'), resourceGroup().name, parameters('sslConfigurationAccessOption')), 'Microsoft.KeyVault/vaults', sslConfig.sllConfigResourceSelector(parameters('adminSSLKeyVaultName'), reference('keyVaultNestedTemplate', '2020-06-01').outputs.keyVaultName.value, parameters('sslConfigurationAccessOption')))]"
                      },
-                     "secretName": "[sslConfig.sllConfigResourceSelector(parameters('keyVaultCustomIdentityKeyStorePassPhraseSecretName'), reference(variables('name_keyVaultNestedTemplate'), '2020-06-01').outputs.customIdentityKeyStorePassPhraseSecretName.value, parameters('sslConfigurationAccessOption'))]"
+                     "secretName": "[sslConfig.sllConfigResourceSelector(parameters('keyVaultCustomIdentityKeyStorePassPhraseSecretName'), reference('keyVaultNestedTemplate', '2020-06-01').outputs.customIdentityKeyStorePassPhraseSecretName.value, parameters('sslConfigurationAccessOption'))]"
                   }
                },
                "keyVaultCustomIdentityKeyStoreType": {
@@ -703,17 +703,17 @@
                "keyVaultCustomTrustKeyStoreDataSecretName": {
                   "reference": {
                      "keyVault": {
-                        "id": "[resourceId(variables('const_currentSubscription'), sslConfig.sllConfigResourceSelector(parameters('adminSSLKeyVaultResourceGroup'), resourceGroup().name, parameters('sslConfigurationAccessOption')), 'Microsoft.KeyVault/vaults', sslConfig.sllConfigResourceSelector(parameters('adminSSLKeyVaultName'), reference(variables('name_keyVaultNestedTemplate'), '2020-06-01').outputs.keyVaultName.value, parameters('sslConfigurationAccessOption')))]"
+                        "id": "[resourceId(variables('const_currentSubscription'), sslConfig.sllConfigResourceSelector(parameters('adminSSLKeyVaultResourceGroup'), resourceGroup().name, parameters('sslConfigurationAccessOption')), 'Microsoft.KeyVault/vaults', sslConfig.sllConfigResourceSelector(parameters('adminSSLKeyVaultName'), reference('keyVaultNestedTemplate', '2020-06-01').outputs.keyVaultName.value, parameters('sslConfigurationAccessOption')))]"
                      },
-                     "secretName": "[sslConfig.sllConfigResourceSelector(parameters('keyVaultCustomTrustKeyStoreDataSecretName'), reference(variables('name_keyVaultNestedTemplate'), '2020-06-01').outputs.customTrustKeyStoretDataSecretName.value, parameters('sslConfigurationAccessOption'))]"
+                     "secretName": "[sslConfig.sllConfigResourceSelector(parameters('keyVaultCustomTrustKeyStoreDataSecretName'), reference('keyVaultNestedTemplate', '2020-06-01').outputs.customTrustKeyStoretDataSecretName.value, parameters('sslConfigurationAccessOption'))]"
                   }
                },
                "keyVaultCustomTrustKeyStorePassPhraseSecretName": {
                   "reference": {
                      "keyVault": {
-                        "id": "[resourceId(variables('const_currentSubscription'), sslConfig.sllConfigResourceSelector(parameters('adminSSLKeyVaultResourceGroup'), resourceGroup().name, parameters('sslConfigurationAccessOption')), 'Microsoft.KeyVault/vaults', sslConfig.sllConfigResourceSelector(parameters('adminSSLKeyVaultName'), reference(variables('name_keyVaultNestedTemplate'), '2020-06-01').outputs.keyVaultName.value, parameters('sslConfigurationAccessOption')))]"
+                        "id": "[resourceId(variables('const_currentSubscription'), sslConfig.sllConfigResourceSelector(parameters('adminSSLKeyVaultResourceGroup'), resourceGroup().name, parameters('sslConfigurationAccessOption')), 'Microsoft.KeyVault/vaults', sslConfig.sllConfigResourceSelector(parameters('adminSSLKeyVaultName'), reference('keyVaultNestedTemplate', '2020-06-01').outputs.keyVaultName.value, parameters('sslConfigurationAccessOption')))]"
                      },
-                     "secretName": "[sslConfig.sllConfigResourceSelector(parameters('keyVaultCustomTrustKeyStorePassPhraseSecretName'), reference(variables('name_keyVaultNestedTemplate'), '2020-06-01').outputs.customTrustKeyStorePassPhraseSecretName.value, parameters('sslConfigurationAccessOption'))]"
+                     "secretName": "[sslConfig.sllConfigResourceSelector(parameters('keyVaultCustomTrustKeyStorePassPhraseSecretName'), reference('keyVaultNestedTemplate', '2020-06-01').outputs.customTrustKeyStorePassPhraseSecretName.value, parameters('sslConfigurationAccessOption'))]"
                   }
                },
                "keyVaultCustomTrustKeyStoreType": {
@@ -722,17 +722,17 @@
                "keyVaultPrivateKeyAliasSecretName": {
                   "reference": {
                      "keyVault": {
-                        "id": "[resourceId(variables('const_currentSubscription'), sslConfig.sllConfigResourceSelector(parameters('adminSSLKeyVaultResourceGroup'), resourceGroup().name, parameters('sslConfigurationAccessOption')), 'Microsoft.KeyVault/vaults', sslConfig.sllConfigResourceSelector(parameters('adminSSLKeyVaultName'), reference(variables('name_keyVaultNestedTemplate'), '2020-06-01').outputs.keyVaultName.value, parameters('sslConfigurationAccessOption')))]"
+                        "id": "[resourceId(variables('const_currentSubscription'), sslConfig.sllConfigResourceSelector(parameters('adminSSLKeyVaultResourceGroup'), resourceGroup().name, parameters('sslConfigurationAccessOption')), 'Microsoft.KeyVault/vaults', sslConfig.sllConfigResourceSelector(parameters('adminSSLKeyVaultName'), reference('keyVaultNestedTemplate', '2020-06-01').outputs.keyVaultName.value, parameters('sslConfigurationAccessOption')))]"
                      },
-                     "secretName": "[sslConfig.sllConfigResourceSelector(parameters('keyVaultPrivateKeyAliasSecretName'), reference(variables('name_keyVaultNestedTemplate'), '2020-06-01').outputs.privateKeyAliasSecretName.value, parameters('sslConfigurationAccessOption'))]"
+                     "secretName": "[sslConfig.sllConfigResourceSelector(parameters('keyVaultPrivateKeyAliasSecretName'), reference('keyVaultNestedTemplate', '2020-06-01').outputs.privateKeyAliasSecretName.value, parameters('sslConfigurationAccessOption'))]"
                   }
                },
                "keyVaultPrivateKeyPassPhraseSecretName": {
                   "reference": {
                      "keyVault": {
-                        "id": "[resourceId(variables('const_currentSubscription'), sslConfig.sllConfigResourceSelector(parameters('adminSSLKeyVaultResourceGroup'), resourceGroup().name, parameters('sslConfigurationAccessOption')), 'Microsoft.KeyVault/vaults', sslConfig.sllConfigResourceSelector(parameters('adminSSLKeyVaultName'), reference(variables('name_keyVaultNestedTemplate'), '2020-06-01').outputs.keyVaultName.value, parameters('sslConfigurationAccessOption')))]"
+                        "id": "[resourceId(variables('const_currentSubscription'), sslConfig.sllConfigResourceSelector(parameters('adminSSLKeyVaultResourceGroup'), resourceGroup().name, parameters('sslConfigurationAccessOption')), 'Microsoft.KeyVault/vaults', sslConfig.sllConfigResourceSelector(parameters('adminSSLKeyVaultName'), reference('keyVaultNestedTemplate', '2020-06-01').outputs.keyVaultName.value, parameters('sslConfigurationAccessOption')))]"
                      },
-                     "secretName": "[sslConfig.sllConfigResourceSelector(parameters('keyVaultPrivateKeyPassPhraseSecretName'), reference(variables('name_keyVaultNestedTemplate'), '2020-06-01').outputs.privateKeyPassPhraseSecretName.value, parameters('sslConfigurationAccessOption'))]"
+                     "secretName": "[sslConfig.sllConfigResourceSelector(parameters('keyVaultPrivateKeyPassPhraseSecretName'), reference('keyVaultNestedTemplate', '2020-06-01').outputs.privateKeyPassPhraseSecretName.value, parameters('sslConfigurationAccessOption'))]"
                   }
                },
                "portsToExpose": {
