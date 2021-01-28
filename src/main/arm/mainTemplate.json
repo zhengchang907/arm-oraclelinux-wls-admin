@@ -201,6 +201,7 @@
          }
       },
       "sslConfigurationAccessOption": {
+         "defaultValue": "",
          "type": "string",
          "metadata": {
             "description": "Options to provide required configuration for SSL configuration"
