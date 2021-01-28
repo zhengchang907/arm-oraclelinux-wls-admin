@@ -57,10 +57,17 @@
                 "description": "Price tier for Key Vault."
             },
             "defaultValue": "Standard"
+        },
+        "utcValue": {
+            "type": "string",
+            "defaultValue": "[utcNow()]",
+            "metadata": {
+                "description": "Current deployment time. Used as a tag in deployment script."
+            }
         }
     },
     "variables": {
-        "name_keyVaultName": "[take(concat('wls-kv', utcNow(), uniqueString(resourceGroup().id, deployment().name)), 24)]",
+        "name_keyVaultName": "[take(concat('wls-kv', parameters('utcValue'), uniqueString(resourceGroup().id, deployment().name)), 24)]",
         "name_customIdentityKeyStoreDataSecretName": "customIdentityKeyStoreData",
         "name_customIdentityKeyStorePassPhraseSecretName": "customIdentityKeyStorePassPhrase",
         "name_customTrustKeyStoreDataSecretName": "customTrustKeyStoreData",
