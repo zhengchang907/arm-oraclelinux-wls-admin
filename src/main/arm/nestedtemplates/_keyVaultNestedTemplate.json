@@ -14,7 +14,7 @@
                 "description": "Custom Identity KeyStore Passphrase"
             }
         },
-        "uploadedCustomTrustKeyStoretData": {
+        "uploadedCustomTrustKeyStoreData": {
             "type": "string",
             "metadata": {
                 "description": "Custom Trust KeyStore Data"
@@ -63,7 +63,7 @@
         "name_keyVaultName": "sslConfig",
         "name_customIdentityKeyStoreDataSecretName": "customIdentityKeyStoreData",
         "name_customIdentityKeyStorePassPhraseSecretName": "customIdentityKeyStorePassPhrase",
-        "name_customTrustKeyStoretDataSecretName": "customTrustKeyStoretData",
+        "name_customTrustKeyStoreDataSecretName": "customTrustKeyStoreData",
         "name_customTrustKeyStorePassPhraseSecretName": "customTrustKeyStorePassPhrase",
         "name_privateKeyAliasSecretName": "privateKeyAlias",
         "name_privateKeyPassPhraseSecretName": "privateKeyPassPhrase"
@@ -111,13 +111,13 @@
         {
             "type": "Microsoft.KeyVault/vaults/secrets",
             "apiVersion": "2019-09-01",
-            "name": "[concat(variables('name_keyVaultName'), '/', variables('name_customTrustKeyStoretDataSecretName'))]",
+            "name": "[concat(variables('name_keyVaultName'), '/', variables('name_customTrustKeyStoreDataSecretName'))]",
             "location": "[parameters('location')]",
             "dependsOn": [
                 "[resourceId('Microsoft.KeyVault/vaults', variables('name_keyVaultName'))]"
             ],
             "properties": {
-                "value": "[parameters('uploadedCustomTrustKeyStoretData')]"
+                "value": "[parameters('uploadedCustomTrustKeyStoreData')]"
             }
         },
         {
@@ -172,7 +172,7 @@
         },
         "customTrustKeyStoretDataSecretName": {
             "type": "string",
-            "value": "[variables('name_customTrustKeyStoretDataSecretName')]"
+            "value": "[variables('name_customTrustKeyStoreDataSecretName')]"
         },
         "customTrustKeyStorePassPhraseSecretName": {
             "type": "string",
