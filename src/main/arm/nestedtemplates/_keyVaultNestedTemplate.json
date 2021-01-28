@@ -60,7 +60,7 @@
         }
     },
     "variables": {
-        "name_keyVaultName": "sslConfig",
+        "name_keyVaultName": "[take(concat('wls-kv', utcNow(), uniqueString(resourceGroup().id, deployment().name)), 24)]",
         "name_customIdentityKeyStoreDataSecretName": "customIdentityKeyStoreData",
         "name_customIdentityKeyStorePassPhraseSecretName": "customIdentityKeyStorePassPhrase",
         "name_customTrustKeyStoreDataSecretName": "customTrustKeyStoreData",
